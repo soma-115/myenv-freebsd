@@ -10,7 +10,7 @@ HOME_DIR="$HOME"
 CURRENT_DIR="$(pwd)"
 
 # バックアップディレクトリ（カレントディレクトリの親ディレクトリに作成）
-BACKUP_DIR="$(dirname "$CURRENT_DIR")/backup"
+BACKUP_DIR="./backup"
 
 # バックアップディレクトリ作成
 mkdir -p "$BACKUP_DIR"
