@@ -12,6 +12,8 @@ cp ./.vimrc ~/.vimrc
 # 2. vim-plug のインストール
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sudo curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # 3. Powerline フォントのインストール
 git clone https://github.com/powerline/fonts.git --depth=1
@@ -20,6 +22,10 @@ cd fonts
 cd ..
 rm -rf fonts
 
-# 4. プラグインのインストール（Vim バッチモード）
-vim +PlugInstall +qall
+# 4. rootにコピー
+sudo ln -s ~/.vimrc /root/.vimrc
+sudo ln -s ~/.vim    /root/.vim
 
+# 5. プラグインのインストール（Vim バッチモード）
+vim +PlugInstall +qall
+sudo vim +PlugInstall +qall
