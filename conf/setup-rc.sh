@@ -3,18 +3,19 @@
 RC_CONF="/etc/rc.conf"
 
 SETTINGS='
+gateway_enable="YES"
 #pf_enable="YES"
 #pf_rules="/etc/pf.conf"
 #pf_flags=""
 #pflog_enable="YES"
 #pflog_logfile="/var/log/pflog"
 #pflog_flags=""
-
+#
 #firewall_enable="YES"
-#firewall_type="open"
+#firewall_type="OPEN"
+#firewall_logging="YES"
 #firewall_nat_enable="YES"
-#natd_enable="YES"
-#natd_interface="em0"
+#firewall_nat_interface="em0"
 '
 
 # バックアップ作成
