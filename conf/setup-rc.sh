@@ -4,6 +4,8 @@ RC_CONF="/etc/rc.conf"
 
 SETTINGS='
 gateway_enable="YES"
+jail_enable="YES"
+linux_enable="YES"
 #pf_enable="YES"
 #pf_rules="/etc/pf.conf"
 #pf_flags=""
