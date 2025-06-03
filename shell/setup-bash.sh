@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 
 # 対象ファイル
 FILES=(".bashrc" ".bash_profile")
