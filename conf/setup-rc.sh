@@ -16,6 +16,7 @@ linux_enable="YES"
 #firewall_enable="YES"
 #firewall_type="OPEN"
 #firewall_logging="YES"
+#firewall_logif="YES"
 #firewall_nat_enable="YES"
 #firewall_nat_interface="em0"
 '
