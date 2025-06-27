@@ -28,6 +28,11 @@ parse_git_branch() {
 }
 PS1='\[\e[1;36m\]\u@\h\[\e[0m\]:\[\e[34m\]\w \[\e[35m\]$(parse_git_branch)\[\e[0m\]\$ '
 
+# cd後にlsする
+cd (){
+    builtin cd "$@" && ls --color=auto
+}
+
 # vimをデフォルトエディタに設定する
 export EDITOR=vim
 
