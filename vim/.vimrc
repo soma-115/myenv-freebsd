@@ -45,4 +45,5 @@ set hlsearch
 set incsearch
 set ignorecase
 set backspace=indent,eol,start
-
+nnoremap j gj
+nnoremap k gk
