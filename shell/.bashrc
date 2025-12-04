@@ -1,6 +1,3 @@
-# 色付きのプロンプト
-PS1='\[\e[01;36m\]\u@\h\[\e[0m\]:\[\e[34m\]\w\[\e[0m\] \$ '
-
 # コマンド補完を強化する
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
@@ -21,6 +18,7 @@ alias s='ls'
 
 # PATHを追加する
 export PATH="$HOME/bin:$PATH"
+export PATH="$PATH:/usr/local/go/bin"
 
 # Gitブランチをプロンプトに表示する
 parse_git_branch() {
